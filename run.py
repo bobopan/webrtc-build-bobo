@@ -176,6 +176,8 @@ PATCHES = {
         'windows_silence_warnings.patch',
         'windows_fix_optional.patch',
         'windows_fix_audio_device.patch',
+        'windows_fix_maxbitrate.patch',
+        'windows_fix_maxbitrate2.patch',
         'ssl_verify_callback_with_native_handle.patch',
     ],
     'windows_arm64': [

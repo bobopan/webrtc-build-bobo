@@ -1,0 +1,15 @@
+diff --git a/rtc_tools/rtp_generator/rtp_generator.cc b/rtc_tools/rtp_generator/rtp_generator.cc
+index 90af82abe5..6fd941c507 100644
+--- a/rtc_tools/rtp_generator/rtp_generator.cc
++++ b/rtc_tools/rtp_generator/rtp_generator.cc
+@@ -186,8 +186,8 @@ RtpGenerator::RtpGenerator(const RtpGeneratorOptions& options)
+       event_log_(std::make_unique<RtcEventLogNull>()),
+       call_(Call::Create(CallConfig(event_log_.get()))),
+       task_queue_(CreateDefaultTaskQueueFactory()) {
+-  constexpr int kMinBitrateBps = 30000;    // 30 Kbps
+-  constexpr int kMaxBitrateBps = 2500000;  // 2.5 Mbps
++  constexpr int kMinBitrateBps = 300000;    // 30 Kbps
++  constexpr int kMaxBitrateBps = 12500000;  // 2.5 Mbps
+
+   int stream_count = 0;
+   webrtc::VideoEncoder::EncoderInfo encoder_info;
